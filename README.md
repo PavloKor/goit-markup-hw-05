@@ -68,3 +68,7 @@ _Блок main_
 - filter-list - список ul
 - filter-btn - кнопки
 - projects - список ul з проектами
+
+{ "printWidth": 100, "tabWidth": 2, "useTabs": false, "semi": true, "singleQuote": true,
+"trailingComma": "es5", "bracketSpacing": true, "jsxBracketSameLine": false, "arrowParens": "avoid",
+"proseWrap": "always" }
