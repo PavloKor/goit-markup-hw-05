@@ -285,8 +285,28 @@ ul {
   display: flex;
   gap: 30px;
 }
+.work-group {
+  position: relative;
+}
 .work-img {
 }
+.work-desc {
+  position: absolute;
+  top: 224px;
+  left: 0%;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  padding: 27px;
+  color: var(--adrs-txt-cl);
+  background: rgba(47, 48, 58, 0.8);
+}
+
 /* наша команда Team */
 .team {
   padding-top: 94px;
@@ -441,7 +461,7 @@ ul {
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-txt-cl);
-  border: 1 px solid var(--accent-txt-cl);
+  border: 1px solid var(--accent-txt-cl);
 }
 
 /* Головна секція у портфоліо */
