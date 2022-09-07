@@ -82,15 +82,24 @@ ul {
   text-decoration: none;
   color: currentColor;
 }
-.active {
-  color: var(--btn-bcg-cl);
+
+.nav {
+  margin-left: 93px;
 }
 .list-nav {
   display: flex;
   gap: 50px;
 }
-.nav {
-  margin-left: 93px;
+.active {
+  color: var(--btn-bcg-cl);
+}
+
+.current::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--btn-bcg-cl);
 }
 .list,
 .list-nav,
