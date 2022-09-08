@@ -24,6 +24,7 @@
   --icon-txt-cl: #afb1b8;
 
   /*others*/
+  --perehid: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Reset*/
@@ -98,12 +99,21 @@ ul {
   color: var(--btn-bcg-cl);
 }
 
+/*Лінія (костиль з топом)*/
+
+.link-nav {
+  position: relative;
+}
 .current::after {
+  position: absolute;
+  top: 44px;
+  left: 0%;
   content: '';
   display: inline-block;
   width: 100%;
   height: 4px;
   background-color: var(--btn-bcg-cl);
+  border-radius: 2px;
 }
 
 .list-contact {
@@ -112,19 +122,14 @@ ul {
   margin-left: auto;
 }
 
-.link-nav:hover,
-.link-nav:focus,
-.link-contact:hover,
-.link-contact:focus {
-  color: var(--accent-txt-cl);
-}
-
 .link-nav,
 .link-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+
+  transition: var(--perehid);
 }
 .link-contact {
   color: var(--text-cl);
@@ -132,7 +137,16 @@ ul {
 .contact-icon {
   fill: var(--text-cl);
   margin-right: 10px;
+
+  transition: var(--perehid);
 }
+.link-nav:hover,
+.link-nav:focus,
+.link-contact:hover,
+.link-contact:focus {
+  color: var(--accent-txt-cl);
+}
+
 .link-contact:hover .contact-icon,
 .link-contact:focus .contact-icon {
   fill: var(--accent-txt-cl);
@@ -197,6 +211,8 @@ ul {
   line-height: calc(30 / 16);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: var(--perehid);
 }
 .btn:focus,
 .btn:hover {
@@ -400,6 +416,8 @@ ul {
   color: var(--icon-txt-cl);
   background-color: var(--main-bcg-cl);
   border-radius: 50%;
+
+  transition: var(--perehid);
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -452,6 +470,8 @@ ul {
   border-radius: 4px;
 
   fill: currentColor;
+
+  transition: var(--perehid);
 }
 /*
 .client-item:hover .client-link,
@@ -494,6 +514,8 @@ ul {
   display: block;
   cursor: pointer;
   background-color: #f5f4fa;
+
+  transition: var(--perehid);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -509,6 +531,8 @@ ul {
 }
 .project-item {
   width: 370px;
+
+  transition: var(--perehid);
 }
 .project-item:hover,
 .project-item:focus {
@@ -587,6 +611,8 @@ ul {
   color: var(--btn-txt-cl);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: var(--perehid);
 }
 .footer-socials-icon {
   fill: currentColor;
