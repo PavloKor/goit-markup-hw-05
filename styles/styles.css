@@ -130,7 +130,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  transition: var(--perehid);
+  transition: color var(--perehid);
 }
 .link-contact {
   color: var(--text-cl);
@@ -139,7 +139,7 @@ ul {
   fill: var(--text-cl);
   margin-right: 10px;
 
-  transition: var(--perehid);
+  transition: fill var(--perehid);
 }
 .link-nav:hover,
 .link-nav:focus,
@@ -213,7 +213,7 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  transition: var(--perehid);
+  transition: background-color var(--perehid);
 }
 .btn:focus,
 .btn:hover {
@@ -418,7 +418,7 @@ ul {
   background-color: var(--main-bcg-cl);
   border-radius: 50%;
 
-  transition: var(--perehid);
+  transition: color var(--perehid), background-color var(--perehid);
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -472,7 +472,7 @@ ul {
 
   fill: currentColor;
 
-  transition: var(--perehid);
+  transition: fill var(--perehid), border var(--perehid);
 }
 /*
 .client-item:hover .client-link,
@@ -483,7 +483,7 @@ ul {
 
 .client-link:hover,
 .client-link:focus {
-  color: var(--accent-txt-cl);
+  fill: var(--accent-txt-cl);
   border: 1px solid var(--accent-txt-cl);
 }
 
@@ -516,7 +516,7 @@ ul {
   cursor: pointer;
   background-color: #f5f4fa;
 
-  transition: var(--perehid);
+  transition: color var(--perehid), background-color var(--perehid), box-shadow var(--perehid);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -532,20 +532,22 @@ ul {
 }
 .project-item {
   width: 370px;
-
-  transition: var(--perehid);
+  cursor: pointer;
+  transition: box-shadow var(--perehid);
 }
-.project-item:hover,
-.project-item:focus {
-  border: 1px solid #eeeeee;
+/*.project-item:focus,
+.project-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+*/
 /*OVERLAY*/
 
 .project-thumb {
+  display: block;
   position: relative;
   overflow: hidden;
+  transition: box-shadow var(--perehid);
 }
 .overlay {
   position: absolute;
@@ -565,7 +567,31 @@ ul {
 
   transition: var(--perehid);
 }
-.project-item:hover .overlay {
+/*.project-thumb:hover,
+.project-thumb:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-item:hover .overlay,
+.project-item:focus .overlay {
+  transform: translateY(0%);
+}
+*/
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-item:focus .overlay,
+.project-item:hover .overlay,
+.project-thumb:focus .overlay {
   transform: translateY(0%);
 }
 .overlay-desc {
@@ -646,7 +672,7 @@ ul {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition: var(--perehid);
+  transition: background-color var(--perehid);
 }
 .footer-socials-icon {
   fill: currentColor;
@@ -679,6 +705,7 @@ ul {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition: opacity var(--perehid), visibility var(--perehid);
 }
 .modal {
   /*техніка центрування абсолютно позиційованих елементів */
