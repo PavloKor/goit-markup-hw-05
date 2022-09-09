@@ -24,7 +24,7 @@
   --icon-txt-cl: #afb1b8;
 
   /*others*/
-  --perehid: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --perehid: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Reset*/
@@ -549,6 +549,41 @@ ul {
   overflow: hidden;
   transition: box-shadow var(--perehid);
 }
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow var(--perehid);
+}
+
+/*.project-thumb:hover,
+.project-thumb:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-item:hover .overlay,
+.project-item:focus .overlay {
+  transform: translateY(0%);
+}
+*/
+.project-thumb:hover,
+.project-thumb:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-thumb:hover .overlay,
+.project-thumb:focus .overlay {
+  transform: translateY(0%);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .overlay {
   position: absolute;
   top: 0%;
@@ -566,33 +601,6 @@ ul {
   background-color: rgba(33, 150, 243, 0.9);
 
   transition: var(--perehid);
-}
-/*.project-thumb:hover,
-.project-thumb:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-item:hover,
-.project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.project-item:hover .overlay,
-.project-item:focus .overlay {
-  transform: translateY(0%);
-}
-*/
-.project-item:hover,
-.project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-item:focus .overlay,
-.project-item:hover .overlay,
-.project-thumb:focus .overlay {
-  transform: translateY(0%);
 }
 .overlay-desc {
   font-weight: 400;
